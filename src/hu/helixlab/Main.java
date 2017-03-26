@@ -6,6 +6,7 @@ public class Main {
 
         CalculatorService calculatorservice = new CalculatorService();
 
-        System.out.println(calculatorservice.isItEvent(10));
+        System.out.println(calculatorservice.isItEvent(12));
+        System.out.print(calculatorservice.calculate(5,2,'*'));
     }
 }
