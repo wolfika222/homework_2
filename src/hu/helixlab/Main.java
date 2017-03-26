@@ -12,5 +12,6 @@ public class Main {
         calculationHelper.input();
         System.out.println("Eredmény: " + calculatorservice.calculate(calculationHelper.a, calculationHelper.b, calculationHelper.op) + "\n");
         System.out.println(calculatorservice.randomgenerate(25, 50));
+        calculatorservice.randomNumbers();
     }
 }

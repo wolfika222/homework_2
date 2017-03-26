@@ -49,4 +49,16 @@ public class CalculatorService {
             return "Kerek";
         } else return "Nem kerek";
     }
+
+    public void randomNumbers(){
+        Random random = new Random();
+        int szamA = random.nextInt(50) + 100;
+        int szamB = random.nextInt(50) + 100;
+        System.out.println(szamA + " " + szamB);
+        if ((szamA > szamB && szamA % 2 == 0) || (szamA < szamB && szamA % 2 == 1)){
+            System.out.println(szamA);
+        } else if (szamB > szamA && szamB % 2 == 1){
+            System.out.println(szamB);
+        } else System.out.println(Math.pow(szamA, szamB));
+    }
 }
