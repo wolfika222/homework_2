@@ -1,5 +1,7 @@
 package hu.helixlab;
 
+import java.util.Random;
+
 /**
  * Created by Hp_Workplace on 2017.03.26..
  */
@@ -37,5 +39,14 @@ public class CalculatorService {
         }
         return result;
 
+    }
+
+    public String randomgenerate(float min, float max) {
+        Random random = new Random();
+        float randomFloat = min + random.nextFloat() * (max - min);
+        System.out.print(randomFloat + "\n");
+        if (randomFloat == Math.round(randomFloat)) {
+            return "Kerek";
+        } else return "Nem kerek";
     }
 }

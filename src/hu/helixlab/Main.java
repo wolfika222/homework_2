@@ -8,8 +8,9 @@ public class Main {
         CalculationHelper calculationHelper = new CalculationHelper();
 
         System.out.println(calculatorservice.isItEvent(12));
-        System.out.print(calculatorservice.calculate(5,2,'*') + "\n");
+        System.out.print(calculatorservice.calculate(5, 2, '*') + "\n");
         calculationHelper.input();
-        System.out.println("Eredmény: " + calculatorservice.calculate(calculationHelper.a, calculationHelper.b, calculationHelper.op));
+        System.out.println("Eredmény: " + calculatorservice.calculate(calculationHelper.a, calculationHelper.b, calculationHelper.op) + "\n");
+        System.out.println(calculatorservice.randomgenerate(25, 50));
     }
 }
