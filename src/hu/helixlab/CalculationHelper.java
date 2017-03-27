@@ -7,18 +7,17 @@ import java.util.Scanner;
  */
 public class CalculationHelper {
 
-    int a, b;
-    char op;
 
-    public void input(){
-        Scanner szamA = new Scanner(System.in);
+    public int input(){
+        CalculatorService calculatorService = new CalculatorService();
+        Scanner number = new Scanner(System.in);
         System.out.println("Kérem az első számot: ");
-        a = szamA.nextInt();
-        Scanner szamB = new Scanner(System.in);
+        int a = number.nextInt();
         System.out.println("Kérem a második számot: ");
-        b = szamB.nextInt();
+        int b = number.nextInt();
         Scanner operat = new Scanner(System.in);
         System.out.println("Kérek egy műveletet! (+,-,*,/) ");
-        op = operat.nextLine().charAt(0);
+        char op = operat.nextLine().charAt(0);
+        return calculatorService.calculate(a,b,op);
     }
 }
